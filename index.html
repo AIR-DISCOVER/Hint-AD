@@ -6,13 +6,13 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description"
-    content="PreAfford: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments. Robotic manipulation with two-finger grippers is challenged by objects lacking distinct graspable features. Traditional pre-grasping methods, which typically involve repositioning objects or utilizing external aids like table edges, are limited in their adaptability across different object categories and environments. To overcome these limitations, we introduce PreAfford, a novel pre-grasping planning framework that incorporates a point-level affordance representation and a relay training approach. Our method significantly improves adaptability, allowing effective manipulation across a wide range of environments and object types. When evaluated on the ShapeNet-v2 dataset, PreAfford not only enhances grasping success rates by 69\% but also demonstrates its practicality through successful real-world experiments. These improvements highlight PreAfford's potential to redefine standards for robotic handling of complex manipulation tasks in diverse settings.
+    content="End-to-end architectures in autonomous driving (AD) face a significant challenge in interpretability, impeding human-AI trust. Human-friendly natural language has been explored for tasks such as driving explanation and 3D captioning. However, previous works primarily focused on the paradigm of declarative interpretability, where the natural language interpretations are not grounded in the intermediate outputs of AD systems, making the interpretations only declarative. In contrast, aligned interpretability establishes a connection between language and the intermediate outputs of AD systems. Here we introduce Hint-AD, an integrated AD-language system that generates language aligned with the holistic perception-prediction-planning outputs of the AD model. By incorporating the intermediate outputs and a holistic token mixer sub-network for effective feature adaptation, Hint-AD achieves desirable accuracy, achieving state-of-the-art results in driving language tasks including driving explanation, 3D dense captioning, and command prediction. To facilitate further study on driving explanation task on nuScenes, we also introduce a human-labeled dataset, Nu-X. Codes, dataset, and models will be publicly available." />
   <meta name="keywords"
-    content="PreAfford: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments" />
+    content="Hint-AD: Holistically Aligned Interpretability for End-to-End Autonomous Driving" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>
-    PreAfford | Project Page
+    Hint-AD | Project Page
   </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
@@ -40,34 +40,25 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h2 class="title is-2 publication-title">
-              PreAfford: Universal Affordance-Based Pre-Grasping for Diverse Objects and Environments
+              Hint-AD: Holistically Aligned Interpretability for End-to-End Autonomous Driving
             </h2>
+            <p style="color: rgb(169, 60, 60); font-size: 20px;">CoRL 2024</p>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
 
               <span class="author-block">
                 <a href="https://robot-k.github.io/" target="_blank">Kairui Ding</a>
-                <sup>1</sup>
+                <sup>1,3</sup>
               ,</span>
 
               <span class="author-block">
                 Boyuan Chen
-                <sup>1</sup>
+                <sup>1,3</sup>
               ,</span>
 
               <span class="author-block">
-                <a href="https://warshallrho.github.io/" target="_blank">Ruihai Wu</a>
-                <sup>2</sup>
-              ,</span>
-
-              <span class="author-block">
-                <a href="https://yuyangli.com/" target="_blank">Yuyang Li</a>
+                Yuchen Su
                 <sup>3</sup>
-              ,</span>
-
-              <span class="author-block">
-                Zongzheng Zhang
-                <sup>1</sup>
               ,</span>
 
               <span class="author-block">
@@ -76,23 +67,33 @@
               ,</span>
 
               <span class="author-block">
-                Siqi Li
+                Bu Jin
                 <sup>1</sup>
               ,</span>
 
               <span class="author-block">
-                <a href="https://yzhu.io/" target="_blank">Yixin Zhu</a>
-                <sup>3</sup>
+                Chonghao Sima
+                <sup>4</sup>
               ,</span>
 
               <span class="author-block">
-                Guyue Zhou
-                <sup>1,4</sup>
-              ,</span>
-
-              <span class="author-block">
-                <a href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a>
+                Xiaohui Li
                 <sup>2</sup>
+              ,</span>
+
+              <span class="author-block">
+                Wuqiang Zhang
+                <sup>2</sup>
+              ,</span>
+
+              <span class="author-block">
+                Paul Barsch
+                <sup>2</sup>
+              ,</span>
+
+              <span class="author-block">
+                <a href="https://opendrivelab.sjtu.edu.cn/lihongyang/" target="_blank">Hongyang Li</a>
+                <sup>4</sup>
               ,</span>
 
               <span class="author-block">
@@ -104,22 +105,17 @@
             <div style="margin: 0.5em;"></div>
             <div class="is-size-5 publication-authors">
               <span class="author-block is-size-6">
-                <sup>1</sup> Institute for AI Industry Research (AIR), Tsinghua University
-                <br>
-                <sup>2</sup> CFCS, School of Computer Science, Peking University &nbsp;&nbsp;&nbsp;
-                <sup>3</sup> Institute for Artificial Intelligence, Peking University  <br/>
-                <sup>4</sup> School of Vehicle and Mobility, Tsinghua University <br/>
-                <!-- <div style="margin: 0.1em;"></div> -->
-                <!-- <span class="eql-cntrb"><small><br /><sup>*</sup>Indicates Equal Contribution</small></span>
-                <!-- a span of 5em -->
-                <!-- <span style="margin: 1em;"></span>  -->
+                <sup>1</sup> Institute for AI Industry Research (AIR), Tsinghua University <br>
+                <sup>2</sup> Mercedes-Benz Group China Ltd. <br>
+                <sup>3</sup> Xingjian College, Tsinghua University <br>
+                <sup>3</sup> OpenDriveLab, Shanghai AI Lab <br>
                 <span class="eql-cntrb"><small><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://drive.google.com/file/d/1l2BF2kN2uKSVV6F3nwp0inGRhy88XfPg/view?usp=sharing" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -127,10 +123,10 @@
                     </span>
                     <span>Paper</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/2404.03634" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -138,10 +134,10 @@
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- Github link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/Robot-K/PreAfford" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -149,7 +145,7 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
               </div>
             </div>
           </div>
@@ -176,7 +172,7 @@
         <!-- </div> -->
         <!-- <img src="static/images/Teaser_cs1.jpg" width="100%" /> -->
         <h2 class="has-text-centered is-size-6">
-         Demonstration Video of <b>PreAfford</b>.
+         Demonstration Video of <b>Hint-AD</b>.
         </h2>
       </div>
     </div>
@@ -191,7 +187,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Robotic manipulation with two-finger grippers is challenged by objects lacking distinct graspable features. Traditional pre-grasping methods, which typically involve repositioning objects or utilizing external aids like table edges, are limited in their adaptability across different object categories and environments. To overcome these limitations, we introduce PreAfford, a novel pre-grasping planning framework that incorporates a point-level affordance representation and a relay training approach. Our method significantly improves adaptability, allowing effective manipulation across a wide range of environments and object types. When evaluated on the ShapeNet-v2 dataset, PreAfford not only enhances grasping success rates by 69\% but also demonstrates its practicality through successful real-world experiments. These improvements highlight PreAfford's potential to redefine standards for robotic handling of complex manipulation tasks in diverse settings.
+              End-to-end architectures in autonomous driving (AD) face a significant challenge in interpretability, impeding human-AI trust. Human-friendly natural language has been explored for tasks such as driving explanation and 3D captioning. However, previous works primarily focused on the paradigm of declarative interpretability, where the natural language interpretations are not grounded in the intermediate outputs of AD systems, making the interpretations only declarative. In contrast, aligned interpretability establishes a connection between language and the intermediate outputs of AD systems. Here we introduce Hint-AD, an integrated AD-language system that generates language aligned with the holistic perception-prediction-planning outputs of the AD model. By incorporating the intermediate outputs and a holistic token mixer sub-network for effective feature adaptation, Hint-AD achieves desirable accuracy, achieving state-of-the-art results in driving language tasks including driving explanation, 3D dense captioning, and command prediction. To facilitate further study on driving explanation task on nuScenes, we also introduce a human-labeled dataset, Nu-X. Codes, dataset, and models will be publicly available.
             </p>
           </div>
         </div>
@@ -200,7 +196,6 @@
   </section>
   <!-- End paper abstract -->
 
-  <!-- Youtube video -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
@@ -215,7 +210,7 @@
             </div>
           </div>
           <div style="width: 70%;">
-            <b>Illustration of <i>PreAfford</i>, demonstrating the application of a <i>relay training</i> paradigm where two synergistic modules cooperate to facilitate the manipulation of objects typically considered ungraspable.</b> The <i>pre-grasping</i> module assesses environmental features such as edges, slopes, slots, and walls to propose strategic pre-grasping actions that enhance the likelihood of a successful grasp. Simultaneously, the <i>grasping</i> module evaluates these actions and provides feedback in the form of rewards, which are used to refine and optimize the pre-grasping strategies. Two color bars represent the pre-grasping and grasping phases, respectively, with the color intensity reflecting the calculated affordance values; higher values denote more optimal interaction conditions.
+            <b>Illustration of two paradigms for interpretability</b> of end-to-end autonomous driving (AD) systems through natural language. (a) The <i>declarative</i> interpretability does not utilize intermediate outputs from AD systems, resulting in text that merely justifies the car's driving behavior; (b) <i>Aligned</i> interpretability incorporates intermediate outputs from the AD model to align the generated language with the holistic perception-prediction-planning process.
           </div>
         </div>
         <br /><br />
@@ -224,21 +219,43 @@
           style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
           <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
             <div style="width: 100%;">
-              <img src="static/images/framework.png" alt="">
+              <img src="static/images/method_detailed.png" alt="">
             </div>
           </div>
           <div style="width: 70%;">
-            <b>The framework of PreAfford.</b> The framework consists of two main modules, each incorporating three networks: an affordance network, a proposal network, and a critic network. These networks respectively handle tasks of choosing the contact point, generating a proposal, and evaluating the proposal. PointNet++ (PN++) and MLP are employed to process point clouds and facilitate decision-making. During the inference phase, both modules collaborate to develop strategies for pre-grasping and grasping. In contrast, during the training phase, the grasping module generates rewards that are used to train the pre-grasping module, a process we refer to as <i>relay</i>.
+            <b>Framework of Hint-AD.</b> (a) Hint-AD pipeline illustration. Taking intermediate output tokens from an AD pipeline as input, a language decoder generates natural language responses. A holistic token mixer module is designed to adapt the tokens. (b) Detailed illustration of BEV blocks architecture. (c) A detailed illustration of instance blocks architecture.
           </div>
         </div>
 
       </div>
     </div>
   </section>
-  <!-- End youtube video -->
 
-  <!-- Youtube video -->
+
   <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        
+        <h2 class="title is-3">Dataset</h2>
+
+        <div class="columns is-centered has-text-centered"
+          style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
+          <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
+            <div style="width: 100%;">
+              <img src="static/images/dataset.png" alt="">
+            </div>
+          </div>
+          <div style="width: 70%;">
+            <b>Illustration of Nu-X dataset</b>. 
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <!-- Paper video. -->
@@ -247,204 +264,198 @@
         <div class="columns is-centered has-text-centered"
           style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
 
-          <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
+          <div style="width: 65%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
             <div style="width: 100%;">
-              <img src="static/images/main.png" alt="">
+              <img src="static/images/qualitative.png" alt="">
             </div>
           </div>
 
           <div style="width: 70%;">
-            <b>Qualitative Results.</b> Here we demonstrate pre-grasping manipulation on training and testing categories in four scenarios—edge, slot, slope, and wall. Affordance maps highlight effective interaction areas, showing \method’s capability to devise suitable pre-grasping and grasping strategies for various object categories and scenes, including both seen and unseen objects.
-          </div>
-
-          <div style="margin: 1em;"></div>
-
-          <div style="width: 50%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
-            <div style="width: 100%;">
-              <img src="static/images/multiple.png" alt="">
-            </div>
-          </div>
-
-          <div style="width: 70%;">
-            <b>Multi-feature scenario:</b>} PreAfford effectively addresses scenarios where multiple environmental features are present simultaneously. (a) A complex environment, (b) Affordance heatmap.
+            <b>Qualitative Results.</b> We present examples of the language output generated by Hint-AD across multiple tasks, including driving explanation, 3D dense captioning, VQA, command prediction, and four categories of alignment tasks. Captions that do not match the ground truth are colored in red.
           </div>
 
           <div style="margin: 1em;"></div>
 
           <div style="width: 85%;">
-            <b>Comparison with baselines.</b> Pre-grasping increases grasping success rates by 52.9%. A closed-loop strategy further enhances this improvement by 16.4% across all categories.
+            <b>Comparison with baselines.</b> "Inter. outputs" represents intermediate outputs. All methods are adapted for BEV visual representation and employ mixed dataset training. Hint-UniAD and Hint-VAD, as two implementations of Hint-AD on different AD models, outperform baselines across four language tasks in the AD context.
           </div>
 
           <!-- Table with training and testing object categories -->
           <table border="1">
             <tr>
-              <th rowspan="2"><strong>Setting</strong></th>
-              <th colspan="6"><strong>Train object categories</strong></th>
-              <th colspan="6"><strong>Test object categories</strong></th>
+              <th rowspan="2"><strong>Input</strong></th>
+              <th rowspan="2"><strong>Method</strong></th>
+              <th colspan="5">Nu-X</th>
+              <th colspan="4">TOD</th>
+              <th colspan="3">NuScenes-QA</th>
+              <th rowspan="2">Command Acc.</th>
             </tr>
             <tr>
-              <td><strong>Edge</strong></td>
-              <td><strong>Wall</strong></td>
-              <td><strong>Slope</strong></td>
-              <td><strong>Slot</strong></td>
-              <td><strong>Multi</strong></td>
-              <td><strong>Avg.</strong></td>
-              <td><strong>Edge</strong></td>
-              <td><strong>Wall</strong></td>
-              <td><strong>Slope</strong></td>
-              <td><strong>Slot</strong></td>
-              <td><strong>Multi</strong></td>
-              <td><strong>Avg.</strong></td>
+              <td><strong>C</strong></td>
+              <td><strong>B</strong></td>
+              <td><strong>M</strong></td>
+              <td><strong>R</strong></td>
+              <td><strong>G</strong></td>
+              <td><strong>C</strong></td>
+              <td><strong>B</strong></td>
+              <td><strong>M</strong></td>
+              <td><strong>R</strong></td>
+              <td><strong>H0</strong></td>
+              <td><strong>H1</strong></td>
+              <td><strong>All</strong></td>
             </tr>
             <tr>
-              <td>W/o pre-grasping</td>
-              <td>2.3</td>
-              <td>3.8</td>
-              <td>4.3</td>
-              <td>3.4</td>
-              <td>4.0</td>
-              <td>3.6</td>
-              <td>6.1</td>
-              <td>2.3</td>
-              <td>2.9</td>
-              <td>5.7</td>
-              <td>6.0</td>
-              <td>4.6</td>
-            </tr>
-            <tr>
-              <td>Random-direction Push</td>
-              <td>21.6</td>
+              <td rowspan="2">Image + 6-shot examples</td>
+              <td>GPT-4o</td>
+              <td>19.0</td>
+              <td>3.95</td>
               <td>10.3</td>
-              <td>6.4</td>
-              <td>16.8</td>
-              <td>18.1</td>
-              <td>14.6</td>
               <td>24.9</td>
-              <td>17.2</td>
-              <td>12.1</td>
-              <td>18.4</td>
-              <td>23.0</td>
-              <td>19.1</td>
+              <td>5.22</td>
+              <td>160.8</td>
+              <td>50.4</td>
+              <td>31.6</td>
+              <td>43.5</td>
+              <td>42.0</td>
+              <td>34.7</td>
+              <td>37.1</td>
+              <td>75.4</td>
             </tr>
             <tr>
-              <td>Center-point Push</td>
-              <td>32.5</td>
-              <td>23.7</td>
+              <td>Gemini 1.5</td>
+              <td>17.6</td>
+              <td>3.43</td>
+              <td>9.3</td>
+              <td>23.4</td>
+              <td>5.03</td>
+              <td>169.7</td>
+              <td>53.6</td>
+              <td>33.4</td>
+              <td>45.9</td>
               <td>40.5</td>
-              <td>39.2</td>
-              <td>39.0</td>
-              <td>35.0</td>
-              <td>25.1</td>
-              <td>17.4</td>
-              <td>28.0</td>
-              <td>30.2</td>
-              <td>21.5</td>
-              <td>24.4</td>
+              <td>32.9</td>
+              <td>35.4</td>
+              <td>80.9</td>
             </tr>
             <tr>
-              <td>Ours w/o closed-loop</td>
-              <td>67.2</td>
-              <td>41.5</td>
-              <td>58.3</td>
-              <td>76.9</td>
-              <td>63.6</td>
-              <td>61.5</td>
-              <td>56.4</td>
-              <td>37.3</td>
-              <td>62.6</td>
-              <td>75.8</td>
-              <td>55.4</td>
-              <td>57.5</td>
+              <td rowspan="2">BEV(2D)</td>
+              <td>ADAPT</td>
+              <td>17.7</td>
+              <td>2.06</td>
+              <td>12.8</td>
+              <td>27.9</td>
+              <td>5.79</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>51.0</td>
+              <td>44.2</td>
+              <td>46.4</td>
+              <td>79.3</td>
             </tr>
             <tr>
-              <td><strong>Ours</strong></td>
-              <td><strong>81.4</strong></td>
-              <td><strong>43.4</strong></td>
-              <td><strong>73.1</strong></td>
-              <td><strong>83.5</strong></td>
-              <td><strong>74.1</strong></td>
-              <td><strong>71.1</strong></td>
-              <td><strong>83.7</strong></td>
-              <td><strong>47.6</strong></td>
-              <td><strong>80.5</strong></td>
+              <td>BEV+Adapter</td>
+              <td>18.6</td>
+              <td>3.47</td>
+              <td>11.3</td>
+              <td>24.5</td>
+              <td>6.27</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>51.8</td>
+              <td>45.6</td>
+              <td>47.7</td>
+              <td>81.1</td>
+            </tr>
+            <tr>
+              <td rowspan="3">BEV(2D) + Bounding Boxes</td>
+              <td>BEVDet+MCAN</td>
+              <td>13.2</td>
+              <td>2.91</td>
+              <td>10.3</td>
+              <td>24.5</td>
+              <td>5.04</td>
+              <td>104.9</td>
+              <td>50.1</td>
+              <td>43.0</td>
+              <td>68.0</td>
+              <td><strong>56.2</strong></td>
+              <td>46.7</td>
+              <td>49.9</td>
+              <td>80.7</td>
+            </tr>
+            <tr>
+              <td>Vote2Cap-DETR</td>
+              <td>15.3</td>
+              <td>2.61</td>
+              <td>10.9</td>
+              <td>24.2</td>
+              <td>5.33</td>
+              <td>110.1</td>
+              <td>48.0</td>
+              <td>44.4</td>
+              <td>67.8</td>
+              <td>51.2</td>
+              <td>44.9</td>
+              <td>47.0</td>
+              <td>76.5</td>
+            </tr>
+            <tr>
+              <td>TOD</td>
+              <td>14.5</td>
+              <td>2.45</td>
+              <td>10.5</td>
+              <td>23.0</td>
+              <td>5.10</td>
+              <td>120.3</td>
+              <td>51.5</td>
+              <td>45.1</td>
+              <td>70.1</td>
+              <td>53.0</td>
+              <td>45.1</td>
+              <td>49.0</td>
+              <td>78.2</td>
+            </tr>
+            <tr>
+              <td rowspan="2">BEV(2D) + Inter. outputs</td>
+              <td><strong>Hint-UniAD (Ours)</strong></td>
+              <td>21.7</td>
+              <td><strong>4.20</strong></td>
+              <td>12.7</td>
+              <td>27.0</td>
+              <td>7.20</td>
+              <td><strong>342.6</strong></td>
+              <td><strong>71.9</strong></td>
+              <td><strong>48.0</strong></td>
+              <td><strong>85.4</strong></td>
+              <td><strong>56.2</strong></td>
+              <td>47.5</td>
+              <td>50.4</td>
               <td><strong>83.0</strong></td>
-              <td><strong>74.6</strong></td>
-              <td><strong>73.9</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Hint-VAD (Ours)</strong></td>
+              <td><strong>22.4</strong></td>
+              <td>4.18</td>
+              <td><strong>13.2</strong></td>
+              <td><strong>27.6</strong></td>
+              <td><strong>7.44</strong></td>
+              <td>263.7</td>
+              <td>67.6</td>
+              <td>47.5</td>
+              <td>79.4</td>
+              <td>55.4</td>
+              <td><strong>48.0</strong></td>
+              <td><strong>50.5</strong></td>
+              <td>82.3</td>
             </tr>
           </table>
-
+          
           <div style="margin: 1em;"></div>
-          
-          <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
-            <div style="width: 100%;">
-              <img src="static/images/experiment.png" alt="">
-            </div>
-          </div>
-            
-          <div style="width: 70%;">
-            <b>Real world pre-grasping manipulations with affordance maps.</b> Red areas in the maps indicate optimal pushing locations. Point clouds are captured by Femto Bolt. (a) move a tablet to table edge, (b) push a plate towards a wall, (c) push a keyboard up a slope, and (d) slide a tablet into a slot.
-          </div>
 
-          <div style="margin: 1em;"></div>
-          
-          <div style="width: 85%;">
-            <b>Real-world experiment results.</b> Experiments were conducted twice for each object in every scene, comparing direct grasping (without pre-grasping) to grasping after pre-grasping. Success rates are presented as percentages.
-          </div>
-          
-            <!-- Table with seen and unseen categories -->
-            <table border="1">
-              <tr>
-                <th rowspan="2"><strong>Setting</strong></th>
-                <th colspan="6"><strong>Seen categories</strong></th>
-                <th colspan="6"><strong>Unseen categories</strong></th>
-              </tr>
-              <tr>
-                <td><strong>Edge</strong></td>
-                <td><strong>Wall</strong></td>
-                <td><strong>Slope</strong></td>
-                <td><strong>Slot</strong></td>
-                <td><strong>Multi</strong></td>
-                <td><strong>Avg.</strong></td>
-                <td><strong>Edge</strong></td>
-                <td><strong>Wall</strong></td>
-                <td><strong>Slope</strong></td>
-                <td><strong>Slot</strong></td>
-                <td><strong>Multi</strong></td>
-                <td><strong>Avg.</strong></td>
-              </tr>
-              <tr>
-                <td>W/o pre-grasping</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>5</td>
-                <td>0</td>
-                <td>0</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>With pre-grasping</td>
-                <td>70</td>
-                <td>45</td>
-                <td>80</td>
-                <td>90</td>
-                <td>85</td>
-                <td>74</td>
-                <td>80</td>
-                <td>30</td>
-                <td>75</td>
-                <td>90</td>
-                <td>85</td>
-                <td>72</td>
-              </tr>
-            </table>
-
-        </div>
       </div>
     </div>
   </section>
